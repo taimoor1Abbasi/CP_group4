@@ -24,7 +24,7 @@ void fundamentals(void) {		// This function is to collect string from user and f
 				printf("Too big... Position reduced to max. availbale\n");
 			}
 			printf("The character found at %d position is \'%c\'\n",
-				(int)position,buffer1[position-1]);		// prind location of numInput in the buffer1 array
+				(int)position,buffer1[position]);		// prind location of numInput in the buffer1 array
 		}
 	} while (strcmp(buffer1, "q") != 0);			// Terminates iteration when user enter 'q'
 	printf("*** End of Indexing Strings Demo ***\n\n");
