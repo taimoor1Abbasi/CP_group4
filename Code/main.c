@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 
-//#include "fundamentals.h" 
-//#include "manipulating.h" 
+#include "fundamentals.h" 
+#include "manipulating.h" 
 #include "converting.h" 
-//#include "tokenizing.h"
+#include "tokenizing.h"
 int main(void) {
 	char buff[10];
 	do {
@@ -15,19 +15,19 @@ int main(void) {
 		fgets(buff, 10, stdin);
 		switch (buff[0])
 		{
-		/*case '1':
+		case '1':
 			fundamentals();
 			break;
 		case '2':
 			manipulating();
 			break;
-			*/
+			
 		case '3':
 			converting();
 			break;
-		/*case '4':
+		case '4':
 			tokenizing();
-			break;*/
+			break;
 		}
 
 	} while (buff[0] != '0');
