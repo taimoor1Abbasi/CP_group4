@@ -1,6 +1,6 @@
 // CONVERTING MODULE SOURCE
 #define _CRT_SECURE_NO_WARNINGS //Ingnore warnings from IDE
-#define BUFFER_SIZE 80     //Decalrs a global variable and sets it to 80
+#define BUFFER_SIZE 80     //Decalre a global variable and sets it to 80
 #include "converting.h"   //Incudes header file that has function prototype and libraies to c File
 // V1
 /*void converting(void) { //function of converting a entered string numeric value to an int value
@@ -18,7 +18,7 @@ do {       //infinite do loop that runs until q is selected
 } while (strcmp(intstring, "q") != 0); //checks if string is equal to q is true exits loop
 	printf("*** End of Converting Strings to int Demo ***\n\n");
 }
-*/
+
 //V2
 void converting(void) { //function of converting a entered string numeric value to an double value
 	printf("*** Start of converting String to double Demo ***\n");
@@ -36,4 +36,23 @@ void converting(void) { //function of converting a entered string numeric value 
 		}
 	} while (strcmp(doubleString,"q") !=0);  //checks if string is equal to q is true exits loop
 	printf("*** End of Converting Strings to double Demo ***\n\n");
+}
+*/
+//V3
+void converting(void) { //function of converting a entered string numeric value to an long value
+	printf("*** Start of converting String to long Demo ***\n");
+	char longString[BUFFER_SIZE]; //Delcare user input char array or string for storing user values and process them
+	double longNumber; //Declare the variable that stores the resultant output of the conversion function 
+	do  //infinite do loop that runs until q is selected
+	{
+		printf("Type the double numeric string (q - to quit):\n");
+		fgets(longString, BUFFER_SIZE, stdin); //receives input from the user and stores it in longString 
+		longString[strlen(longString) - 1] = '\0';  //Sets the final character of the inputted value to \0
+		if (strcmp(longString, "q") != 0)  //Checks if q is entered and if q is entered the if statement doesn't run
+		{
+			longNumber = atol(longString); //call conversion function that converts a  long string to a long value and store it in longNumber
+			printf("Coneverted number is %ld\n", longNumber);
+		}
+	} while (strcmp(longString, "q") != 0);  //checks if string is equal to q is true exits loop
+	printf("*** End of Converting Strings to long Demo ***\n\n");
 }
