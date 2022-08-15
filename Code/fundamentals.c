@@ -29,6 +29,7 @@ void fundamentals(void) {		// This function is to collect string from user and f
 	} while (strcmp(buffer1, "q") != 0);			// Terminates iteration when user enter 'q'
 	printf("*** End of Indexing Strings Demo ***\n\n");
 	
+	
 	//V2
 	printf("*** Start of Measuring Strings Demo ***\n");
 	char buffer2[BUFFER_SIZE];		// Declare char array and store string from user
