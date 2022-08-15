@@ -21,7 +21,6 @@ int main(void) {
 		case '2':
 			manipulating();
 			break;
-			
 		case '3':
 			converting();
 			break;
