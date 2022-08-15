@@ -10,7 +10,7 @@
 */
 
 void manipulating(void) {
-	// V1
+	/*// V1
 	printf("*** Start of Concatenating Strings Demo ***\n");
 	char	string1[BUFFER_SIZE]; //Char arrays of size 80, used for storing user string inputs.
 	char	string2[BUFFER_SIZE];
@@ -52,7 +52,7 @@ void manipulating(void) {
 		}
 
 	} while (strcmp(compare1, "q") != 0); // End loop if string (stored in compare1) is equal to "q"
-	printf("*** End of Comparing Strings Demo ***\n\n");
+	printf("*** End of Comparing Strings Demo ***\n\n");*/
 
 	// V3
 	printf("*** Start of Searching Strings Demo ***");
